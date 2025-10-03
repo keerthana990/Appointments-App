@@ -1,0 +1,46 @@
+hr {
+  border-style: solid 5px;
+}
+ul {
+  list-style: none;
+}
+.appointment-to-add {
+  border: 1px solid #b5b7c4;
+  width: 30%;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.appointment-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.appointment-container {
+  padding: 10px;
+}
+.starred {
+  background: transparent;
+  border: none;
+}
+.starred img {
+  width: 30px;
+  height: 30px;
+}
+.title {
+  font-weight: bold;
+}
+@media screen and (max-width:567px){
+  .appointment-to-add {
+  border: 1px solid #b5b7c4;
+  width: 80%;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+*{
+  font-size: small;
+}
+}

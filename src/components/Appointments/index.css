@@ -1,0 +1,127 @@
+* {
+  font-family: Roboto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  height: 100vh;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.top-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.appointment-img {
+  width: 220px;
+  height: 220px;
+  align-self: flex-end;
+}
+.left-container {
+  padding: 20px;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.input {
+  font-family: 'Roboto';
+  font-size: 16px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 10px;
+  outline: none;
+}
+label {
+  color: gray;
+}
+.sumbit-button {
+  margin-top: 20px;
+  background-color: #8b5cf6;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  border: none;
+  max-width: fit-content;
+  display: inline;
+}
+hr {
+  border-style: solid 5px;
+}
+.active {
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+}
+.inactive {
+  background: transparent;
+  color: gray;
+  border: solid gray 1px;
+  border-radius: 10px;
+  padding: 7px;
+}
+.appointment-starred {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.appointments {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 567px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .top-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+    margin-right: 0;
+  }
+  .input {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .sumbit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .appointment-img {
+    display: none;
+  }
+}
+@media screen and (min-width: 567px) {
+  .st .appointment-to-add {
+    font-size: smaller;
+  }
+}
